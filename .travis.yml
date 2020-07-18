@@ -10,3 +10,9 @@ before_script:
 script:
 - vendor/bin/phpunit
 
+deploy:
+skip_cleanup: true
+github_token: "$GITHUB_TOKEN"
+local_dir: /var/www/html/laravel-ci-cd
+on:
+branch: master
