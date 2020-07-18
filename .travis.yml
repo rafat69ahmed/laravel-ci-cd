@@ -4,8 +4,7 @@ php:
 before_script:
   - composer self-update
   - composer install --no-interaction
-script:
-  - vendor/bin/phpunit 
+
 
 before_deploy:
   - openssl aes-256-cbc -K $encrypted_<put_your_key_here>_key -iv $encrypted_<put_your_key_here>_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
