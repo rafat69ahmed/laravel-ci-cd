@@ -2,7 +2,6 @@ language: php
 php:
   - 7.2
 before_script:
-- mkdir bootstrap/cache
 - cp .env.example .env
 - composer self-update
 - composer install --no-interaction
