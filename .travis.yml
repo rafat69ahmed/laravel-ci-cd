@@ -13,6 +13,6 @@ script:
 deploy:
 skip_cleanup: true
 github_token: "$GITHUB_TOKEN"
-local_dir: /var/www/html/laravel-ci-cd
+local_dir: pubic
 on:
 branch: master
