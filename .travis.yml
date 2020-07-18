@@ -21,7 +21,7 @@ script:
 - vendor/bin/phpunit
 - pwd 
 - ls -al
-- '/usr/bin/rsync -ratlz --rsh="/usr/bin/sshpass -p romesh1423 ssh -o StrictHostKeyChecking=no -l root" './'  '/var/www/html/test'
+- /usr/bin/rsync -ratlz --rsh="/usr/bin/sshpass -p romesh1423 ssh -o StrictHostKeyChecking=no -l root" './' '/var/www/html/test'
 
 deploy:
 skip_cleanup: true
